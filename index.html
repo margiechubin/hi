@@ -1,37 +1,51 @@
 <!doctype html>
-<html ng-app="myApp">
+<html>
   <head>
+    <title>Margie's Resume</title>
+
+    <!--Angular scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-    <script src="controller.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+
+    <!--<script src="services.js"></script>-->
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+
+    <!--Bootstrap and font awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    
+    <!--My stylesheets-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="social.css">
   </head>
 
-  <body>
-    <div ng-controller="MyController" class="container">
-
-      <h2 class="row">Resume</h2>
-      <h3 class="row">Work Experience</h3>
-      <div ng-repeat="e in data.experience">
-        <div class="row">   
-          <h4><b>{{e.company}}</b></h4>
-          <div class="col-md-9">
-            <p><i>{{e.location}} </i><br>
-            <b>{{e.title}}</b> <br>
-            <ul ng-repeat="d in e.description">
-              <li>{{d}}</li>
-            </ul>
-            </p>
-          </div>
-          <div>
-            <p><i>February 2015 - May 2016</i></p>
-          </div>
-        </div>
+  <body class="container-fluid" ng-app="hi">
+    <nav class="navbar navbar-inverse navbar-fixed-top my-nav" role="navigation">
+      <div class="navbar-header col-md-2">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse"> 
+            <span class="sr-only">Toggle navigation</span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="#/about">Margie Chubin</a>
       </div>
+      <div class="collapse navbar-collapse col-md-8" id="navbarCollapse" style="float:right">
+          <ul class="nav navbar-nav">
+              <li class="active"><a href="#/about">About</a></li>
+              <li><a href="#/resume">Resume</a></li>
+              <li><a href="#/projects">Projects</a></li>
+              <li><a href="#/contact">Contact</a></li>
+          </ul>
+      </div>
+    </nav>
     
-    </div>
+    <!--Views change based on the route here-->
+    <div ng-view></div>
+
   </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </html>

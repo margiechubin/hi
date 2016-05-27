@@ -1,3 +1,25 @@
-h2 {
-	color: blue;
+body {
+	background-color: #14032A;
+	color: #D1D1D1;
+	padding: 0 20px;
+}
+
+h1, h2, h3 {
+	color: #0C8D7C;
+}
+
+a {
+	color: #D1757B;
+}
+
+.row {
+	padding: 0px 25px;
+}
+
+.page {
+	padding-top: 40px;
+}
+
+.my-nav {
+	opacity: 1;
 }

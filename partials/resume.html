@@ -1,0 +1,45 @@
+<div ng-controller="mainController" class="page">  
+      <!--Work Experience-->
+      <h3 class="row">Work Experience</h3>
+      <div ng-repeat="e in data.experience">
+        <div class="row">   
+          <h4><b>{{e.company}}</b></h4>
+          <div class="col-sm-9">
+            <p><i>{{e.location}} </i><br>
+            <b>{{e.title}}</b> <br>
+            <ul ng-repeat="d in e.description">
+              <li>{{d}}</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <p><i>{{e.date}}</i></p>
+          </div>
+        </div>
+      </div>
+    
+      <!--Involvement-->
+      <h3 class="row">Involvement</h3>
+      <div ng-repeat="i in data.involvement">
+        <div class="row">   
+          <h4><b>{{i.organization}}</b></h4>
+          <div class="col-sm-9">
+            <b>{{i.positions}}</b> <br>
+            <ul ng-repeat="d in i.description">
+              <li>{{d}}</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <p><i>{{i.date}}</i></p>
+          </div>
+        </div>
+      </div>
+      
+      <!--Projects-->
+
+      <!--Courses-->
+      <h3 class="row">Relevant Coursework</h3>
+      <ul ng-repeat="c in data.courses.completed">
+        <li>{{c}}</li>
+      </ul>
+    
+    </div>

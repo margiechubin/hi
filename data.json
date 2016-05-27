@@ -1,0 +1,96 @@
+{
+	"experience": [
+		{
+			"company": "JPMorgan Chase & Co.",
+			"location": "Chicago, IL",
+			"title": "Technology Summer Analyst",
+			"date": "June 2016 - August 2016",
+			"description": [
+				"Corporate and Investment Banking, incoming Summer 2016"
+				]
+		},
+		{
+			"company": "Dow Chemical",
+			"location": "Champaign, IL",
+			"title": "Software Engineering Intern",
+			"date": "February 2015 - May 2016",
+			"description": [
+				"Programmed front-end and back-end of web applications using Knockout.js and C#",
+				"Managed features from design to release",
+				"Built visualizations using D3.js"
+				]
+		},
+		{
+			"company": "Illini Hillel Cohen Center for Jewish Life",
+			"location": "Champaign, IL",
+			"title": "Fundraising Intern",
+			"date": "August 2014 - May 2015",
+			"description": [
+				"Researched donors to improve fundraising efforts",
+				"Executed a phone-a-thon to raise $5,000,",
+				"Strengthened and organized initiatives on parent outreach"
+				]
+		}
+	],
+	"involvement": [
+		{
+			"organization": "Association for Computing Machinery (ACM)",
+			"positions": "HackIllinois Staff (2016)",
+			"date": "Septemeber 2016 - Present",
+			"description": [
+				"Assisted in planning of annual 36-hour hack-a-thon",
+				"Responsibilities included negotiation with companies, volunteer coordination, and general logistics"
+				]
+		},
+		{
+			"organization": "Women in Computer Science (WCS)",
+			"positions": "Active Member",
+			"date": "August 2013 - Present",
+			"description": [
+				"Participate in tech talks, social events, and advising",
+				"Networking with peers, faculty, alumni, and companies"
+				]
+		},
+		{
+			"organization": "Illini Hillel - Cohen Center for Jewish Life",
+			"positions": "VP of Philanthropy (2015)",
+			"date": "August 2013 - Present",
+			"description": ["Executed several programs to promote students making a difference in the community",
+				"Led Alternative Spring Break and Winter Break volunteer trips"
+				]
+		},
+		{
+			"organization": "Alpha Phi Omega",
+			"positions": "Project Coordinator (Spring 2014 & Spring 2015), Retreat Leader (Spring 2014)",
+			"date": "September 2013 - December 2015",
+			"description": [
+				"Volunteered over 24 hours each semester",
+				"Strengthened relationship between the local Soup Kitchen and the fraternity"
+				]
+		},
+		{
+			"organization": "Society of Women Engineers (SWE)",
+			"positions": "",
+			"date": "August 2013 - Present",
+			"description": [
+				"Engage in programs that highlight mentoring and professional development such as Little Sisters Weekend, Women in Engineering Freshmen Orientation, social events, tech talks, and workshops"
+				]
+		}
+	],
+	"projects": [
+	],
+	"courses": {
+		"completed":
+			[
+				"The Art and Science of Web Programming (CS 498RK)",
+				"Databases (CS 411)",
+				"User Interface Design (CS 465)",
+				"Social Visualization (CS 467)",
+				"Artificial Intelligence (CS 440)"
+			],
+		"current":
+			[
+				"Virtual Reality (CS498)"
+			]
+	}
+}
