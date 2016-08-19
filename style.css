@@ -2,14 +2,37 @@ body {
 	background-color: #14032A;
 	color: #D1D1D1;
 	padding: 0 20px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
 }
 
 h1, h2, h3 {
 	color: #0C8D7C;
 }
 
+h3 {
+	font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand > h3 {
+	margin-top: 0;
+	color: #D1757B;
+}
+
 a {
 	color: #D1757B;
+}
+
+#aboutContainer {
+	height: 600px;
+	width: 100%;
+	display: table;
+}
+
+#aboutInnerContainer {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .row {
@@ -23,3 +46,7 @@ a {
 .my-nav {
 	opacity: 1;
 }
+
+/**
+nice color: #3ba5a8, more blue
+*/

@@ -1,18 +1,27 @@
-<div ng-controller="mainController" class="page">  
+<div ng-controller="mainController" class="page">
+  
       <!--Work Experience-->
-      <h3 class="row">Work Experience</h3>
+      <div class="row">
+        <h3 class="col-sm-3">Work Experience</h3><br></br>
+      </div>
       <div ng-repeat="e in data.experience">
-        <div class="row">   
-          <h4><b>{{e.company}}</b></h4>
+        <br>
+        <div class="row">
+          <div class="col-sm-3">
+            <i>{{e.date}}</i>
+          </div>
           <div class="col-sm-9">
-            <p><i>{{e.location}} </i><br>
-            <b>{{e.title}}</b> <br>
+            <b style="color:#D1757B">{{e.title}}</b>&nbsp;&nbsp;
+            <b>{{e.company}}</b>&nbsp;
+            <i style="color:#9c9c9c">{{e.location}}</i>
+          </div>
+        </div>
+        <br>
+        <div class="row">   
+          <div class="col-sm-9 col-sm-offset-3">
             <ul ng-repeat="d in e.description">
               <li>{{d}}</li>
             </ul>
-          </div>
-          <div class="col-sm-3">
-            <p><i>{{e.date}}</i></p>
           </div>
         </div>
       </div>
