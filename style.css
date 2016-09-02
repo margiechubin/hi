@@ -47,6 +47,11 @@ a {
 	opacity: 1;
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	background-color: #3ba5a8;
+	font-weight: 800;
+}
+
 /**
 nice color: #3ba5a8, more blue
 */
