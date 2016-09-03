@@ -2,7 +2,7 @@
   
       <!--Work Experience-->
       <div class="row">
-        <h3 class="col-sm-3">Work Experience</h3><br></br>
+        <h3 class="col-sm-5">Work Experience</h3><br></br>
       </div>
       <div ng-repeat="e in data.experience">
         <br>
@@ -27,27 +27,34 @@
       </div>
     
       <!--Involvement-->
-      <h3 class="row">Involvement</h3>
+      <div class="row">
+        <h3 class="col-sm-5">Involvement</h3>
+      </div>
       <div ng-repeat="i in data.involvement">
-        <div class="row">   
-          <h4><b>{{i.organization}}</b></h4>
+        <div class="row">
+          <div class="col-sm-3">
+            <p><i>{{i.date}}</i></p>
+          </div>
           <div class="col-sm-9">
-            <b>{{i.positions}}</b> <br>
+            <h4><b style="color:#D1757B">{{i.organization}}</b></h4>
+          </div>
+        </div>
+        <div class="row">   
+          <div class="col-sm-9 col-sm-offset-3">
+            <b>{{i.positions}}</b> <br></br>
             <ul ng-repeat="d in i.description">
               <li>{{d}}</li>
             </ul>
           </div>
-          <div class="col-sm-3">
-            <p><i>{{i.date}}</i></p>
-          </div>
+          
         </div>
       </div>
       
-      <!--Projects-->
-
       <!--Courses-->
-      <h3 class="row">Relevant Coursework</h3>
-      <ul ng-repeat="c in data.courses.completed">
+      <div class="row">
+        <h3 class="col-sm-5">Favorite Classes</h3>
+      </div>
+      <ul ng-repeat="c in data.courses">
         <li>{{c}}</li>
       </ul>
     
