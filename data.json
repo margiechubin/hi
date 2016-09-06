@@ -28,9 +28,9 @@
 			"positions": "Social Chair (Present), HackIllinois Staff (Spring 2016)",
 			"date": "September 2015 - Present",
 			"description": [
-				"Run social events including welcome week, barbeques, and barcrawls",
+				"Run social events including welcome week, barbecues, and barcrawls",
 				"Assisted in planning of HackIllinois, an annual 36-hour hack-a-thon",
-				"Responsibilities included negotiation with companies, volunteer coordination, and general logistics"
+				"Negotiated with companies, coordinated volunteers, and helped with general logistics"
 				]
 		},
 		{
@@ -62,6 +62,8 @@
 		}
 	],
 	"projects": [
+		{"name": "My Weather Buddy", "date": "Fall 2015", "description": "Developed a weather website with personalized temperature verbal description, recommendation for items to bring or wear, and out-of-home schedule."},
+		{"name": "Restaurandom", "date": "March 2015", "description": "To ease the difficulty for chronically indecisive folks of choosing where to eat, we provided the user information such as the cuisine or price level of popular restaurants near a entered location by presenting a randomly generated restaurant one at a time."}
 	],
 	"courses": [
 				"The Art and Science of Web Programming (CS 498RK)",
@@ -70,5 +72,10 @@
 				"Social Visualization (CS 467)",
 				"Artificial Intelligence (CS 440)",
 				"Virtual Reality (CS 498) - In Progress"
-				]
+				],
+	"contact": [
+			{"name": "chubin2@illinois.edu", "link": "mailto:chubin2@illinois.edu"},
+			{"name": "LinkedIn profile", "link": "https://www.linkedin.com/in/margiechubin"},
+			{"name": "Github profile", "link": "http://www.github.com/margiechubin"}
+	]
 }
