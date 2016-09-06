@@ -1,11 +1,15 @@
 <div ng-controller="mainController" class="page">
-  
+
+      <div class="row">
+        Read about my experience below or <a href="data/Margie.pdf">click here for a "paper" version</a>
+      </div>
+
       <!--Work Experience-->
       <div class="row">
-        <h3 class="col-sm-5">Work Experience</h3><br></br>
+        <h3 class="col-sm-5">Work Experience</h3>
       </div>
+      
       <div ng-repeat="e in data.experience">
-        <br>
         <div class="row">
           <div class="col-sm-3">
             <i>{{e.date}}</i>
@@ -24,6 +28,7 @@
             </ul>
           </div>
         </div>
+        <br>
       </div>
     
       <!--Involvement-->
@@ -36,7 +41,7 @@
             <p><i>{{i.date}}</i></p>
           </div>
           <div class="col-sm-9">
-            <h4><b style="color:#D1757B">{{i.organization}}</b></h4>
+            <b class="cool-header">{{i.organization}}</b>
           </div>
         </div>
         <div class="row">   
@@ -49,7 +54,7 @@
           
         </div>
       </div>
-      
+      <br>
       <!--Courses-->
       <div class="row">
         <h3 class="col-sm-5">Favorite Classes</h3>

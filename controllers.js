@@ -2,7 +2,7 @@ app.controller('mainController', ['$scope', '$http', function($scope, $http) {
 
   $scope.data = {};
 
-  $http.get('data.json').then(function(d) {
+  $http.get('data/data.json').then(function(d) {
     $scope.data = d.data;
     //console.log($scope.data);
   });
