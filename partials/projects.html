@@ -1,20 +1,22 @@
 <div ng-controller="mainController" class="page">
 	<div class="row">
-		<h3 class="col-sm-5">Relevant Projects</h3><br></br>
+		<h3 class="col-sm-5">Relevant Projects</h3>
 	</div>
+	<br>
 	<div class="row">
 		<div ng-repeat="p in data.projects">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<i>{{p.date}}</i>
 				</div>
-				<div class="col-md-9 cool-header">
-					<h4>{{p.name}}</h4>
+				<div class="col-sm-9 cool-header">
+					<b>{{p.name}}</b>
 				</div>
 			</div>
-			<div>
-				<div class="col-md-9 col-md-offset-3">{{p.description}}</div>
+			<div class="row">
+				<div class="col-sm-9 col-sm-offset-3">{{p.description}}</div>
 			</div>
+			<br></br>
 		</div>
 	</div>
 </div>
