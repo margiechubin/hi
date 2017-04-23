@@ -11,7 +11,7 @@ app.controller('mainController', ['$scope', '$http', function($scope, $http) {
 
   $scope.links = [ {route:"#/about", name:"About"},
                    {route:"#/resume", name:"Resume"},
-                   {route:"#/projects", name:"Projects"},
+                  // {route:"#/projects", name:"Projects"},
                    {route:"#/contact", name:"Contact"}
                   ];
 

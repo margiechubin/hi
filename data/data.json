@@ -25,7 +25,7 @@
 	"involvement": [
 		{
 			"organization": "Association for Computing Machinery (ACM)",
-			"positions": "Social Chair (Present), HackIllinois Staff (Spring 2016)",
+			"positions": "Social Chair (Fall 2016-Spring 2017), HackIllinois Staff (Spring 2016)",
 			"date": "September 2015 - Present",
 			"description": [
 				"Run social events including welcome week, barbecues, and barcrawls",
@@ -35,7 +35,7 @@
 		},
 		{
 			"organization": "Women in Computer Science (WCS)",
-			"positions": "Active Member",
+			"positions": "Active Member (Since Fall 2013)",
 			"date": "August 2013 - Present",
 			"description": [
 				"Participate in tech talks, social events, and advising",
@@ -48,7 +48,7 @@
 			"date": "August 2013 - Present",
 			"description": [
 				"Executed several programs to promote students making a difference in the community",
-				"Led Alternative Spring Break and Winter Break volunteer trips"
+				"Led and attended Alternative Spring Break and Winter Break volunteer trips"
 				]
 		},
 		{
@@ -71,11 +71,15 @@
 				"User Interface Design (CS 465)",
 				"Social Visualization (CS 467)",
 				"Artificial Intelligence (CS 440)",
-				"Virtual Reality (CS 498) - In Progress"
+				"Virtual Reality (CS 498)",
+				"Computational Linguistics (LING 406)",
+				"Disability & Assistive Technology (AHS 494)",
+				"Accessible Electronic Material (AHS 494)",
+				"Designing Accessible Web Resources (AHS 494)"
 				],
 	"contact": [
-			{"name": "chubin2@illinois.edu", "link": "mailto:chubin2@illinois.edu"},
-			{"name": "LinkedIn profile", "link": "https://www.linkedin.com/in/margiechubin"},
-			{"name": "Github profile", "link": "http://www.github.com/margiechubin"}
+			{"name": "email", "link": "mailto:chubin2@illinois.edu", "msg": "Shoot me an "},
+			{"name": "LinkedIn", "link": "https://www.linkedin.com/in/margiechubin", "msg": "Connect with me on "},
+			{"name": "Github", "link": "http://www.github.com/margiechubin", "msg": "Check out my profile on "}
 	]
 }

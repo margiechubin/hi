@@ -1,66 +1,30 @@
-<div ng-controller="mainController" class="page">
+<main ng-controller="mainController" class="page container" role="main">
 
-      <div class="row">
-        Read about my experience below or <a href="data/margie.pdf">click here for a "paper" version</a>
-      </div>
+  <h1>Experience</h1>
+  <p>Read about my experience below or <a href="data/margie.pdf">click here for a "paper" version</a></p>
 
-      <!--Work Experience-->
-      <div class="row">
-        <h3 class="col-sm-5">Work Experience</h3>
-      </div>
-      
-      <div ng-repeat="e in data.experience">
-        <div class="row">
-          <div class="col-sm-3">
-            <i>{{e.date}}</i>
-          </div>
-          <div class="col-sm-9">
-            <b class="cool-header">{{e.title}}</b>&nbsp;&nbsp;
-            <b>{{e.company}}</b>&nbsp;
-            <i style="color:#9c9c9c">{{e.location}}</i>
-          </div>
-        </div>
-        <br>
-        <div class="row">   
-          <div class="col-sm-9 col-sm-offset-3">
-            <ul ng-repeat="d in e.description">
-              <li>{{d}}</li>
-            </ul>
-          </div>
-        </div>
-        <br>
-      </div>
-    
-      <!--Involvement-->
-      <div class="row">
-        <h3 class="col-sm-5">Involvement</h3>
-      </div>
-      <div ng-repeat="i in data.involvement">
-        <div class="row">
-          <div class="col-sm-3">
-            <p><i>{{i.date}}</i></p>
-          </div>
-          <div class="col-sm-9">
-            <b class="cool-header">{{i.organization}}</b>
-          </div>
-        </div>
-        <div class="row">   
-          <div class="col-sm-9 col-sm-offset-3">
-            <b>{{i.positions}}</b> <br></br>
-            <ul ng-repeat="d in i.description">
-              <li>{{d}}</li>
-            </ul>
-          </div>
-          
-        </div>
-      </div>
-      <br>
-      <!--Courses-->
-      <div class="row">
-        <h3 class="col-sm-5">Favorite Classes</h3>
-      </div>
-      <ul ng-repeat="c in data.courses">
-        <li>{{c}}</li>
-      </ul>
-    
-    </div>
+  <h2>Work Experience</h2>
+  <div ng-repeat="e in data.experience">
+    <h3 class="cool-header">{{e.title}}</h3>
+    <h4>{{e.company}} // {{e.location}}</h4>
+    <h4>{{e.date}}</h4>
+    <ul ng-repeat="d in e.description">
+      <li>{{d}}</li>
+    </ul>
+  </div>
+
+  <h2>University Involvement</h2>
+  <div ng-repeat="i in data.involvement">
+    <h3 class="cool-header">{{i.organization}}</h3>
+    <h4>{{i.positions}}</h4>
+    <ul ng-repeat="d in i.description">
+      <li>{{d}}</li>
+    </ul>
+  </div>
+
+  <h2>Favorite Classes</h2>
+  <ul ng-repeat="c in data.courses">
+    <li>{{c}}</li>
+  </ul>
+
+</main>
