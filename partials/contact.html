@@ -1,10 +1,6 @@
-<div ng-controller="mainController" class="page">
-	<div class="row">
-		<h3>Contact me</h3>
+<main ng-controller="mainController" class="page container" role="main">
+	<h1>Contact me</h3>
+	<div ng-repeat="c in data.contact">
+		{{c.msg}}<a ng-href="{{c.link}}" target="_blank">{{c.name}}</a>
 	</div>
-	<div class="row">
-		<div ng-repeat="c in data.contact">
-			<a ng-href="{{c.link}}" target="_blank">{{c.name}}</a>
-		</div>
-	</div>
-</div>
+</main>

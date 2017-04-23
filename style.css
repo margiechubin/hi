@@ -1,46 +1,60 @@
+html {font-size: 1em;}
+
 body {
 	background-color: #14032A;
 	color: #D1D1D1;
-	padding: 0 20px;
 	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
+	line-height: 1.45;
+	font-size: inherit;
 }
 
-h1, h2, h3 {
+p {margin-bottom: 1.3em;}
+
+/*"Perfect Fourth" scale from http://type-scale.com/ with base size 16px*/
+h1, h2, h3, h4 {
+	margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.1;
+}
+
+h1, h2 {
 	color: #0C8D7C;
 }
 
-h3 {
-	font-family: 'Playfair Display', serif;
-}
+h1 {font-size: 3.157em;}
 
-.navbar-brand > h3 {
+h2 {font-size: 2.369em;}
+
+h3 {font-size: 1.777em;}
+
+h4 {font-size: 1.333em;}
+
+.nav-name {
+	font-family: 'Playfair Display', serif;
 	margin-top: 0;
 	color: #D1757B;
 }
 
-a {
+a, .cool-header {
 	color: #D1757B;
 }
 
 #aboutContainer {
-	height: 600px;
+	/*height: 600px;*/
 	width: 100%;
 	display: table;
+	/*padding-top: 50px;*/
 }
 
 #aboutInnerContainer {
 	text-align: center;
 	display: table-cell;
-	vertical-align: middle;
-}
-
-.row {
-	padding: 0px 25px;
+	/*vertical-align: middle;*/
 }
 
 .page {
-	padding-top: 70px;
+	padding-top: 60px;
+	padding-bottom: 50px;
 }
 
 .my-nav {
@@ -52,9 +66,17 @@ a {
 	font-weight: 800;
 }
 
-.cool-header {
-	color:#D1757B
+.page-footer {
+	background-color: #222222;
+	width: 100%;
+	/*height: 100px;
+	position: absolute;*/
+	padding: 15px;
 }
+
+/*.social-icons {
+	text-align: center;
+}*/
 
 /**
 nice color: #3ba5a8, more blue

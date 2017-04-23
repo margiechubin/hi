@@ -1,53 +1,75 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Margie's Resume</title>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Margie Chubin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!--Angular scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
 
-    <!--Angular scripts-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+  <!--<script src="services.js"></script>-->
+  <script src="app.js"></script>
+  <script src="controllers.js"></script>
 
-    <!--<script src="services.js"></script>-->
-    <script src="app.js"></script>
-    <script src="controllers.js"></script>
+  <!--css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
 
-    <!--css-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
-    
-    <!--My stylesheets-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="social.css">
-  </head>
+  <!--My stylesheets-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="social.css">
+</head>
 
-  <body class="container-fluid" ng-app="hi">
-    <div ng-controller="mainController">
-      <nav class="navbar navbar-inverse navbar-fixed-top my-nav" role="navigation">
+<body ng-app="hi">
+  <header ng-controller="mainController" role="banner">
+    <nav class="navbar navbar-inverse navbar-fixed-top my-nav" role="navigation">
+      <div class="container">
         <div class="navbar-header col-md-3">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse"> 
-              <span class="sr-only">Toggle navigation</span> 
-              <span class="icon-bar"></span> 
-              <span class="icon-bar"></span> 
-              <span class="icon-bar"></span> 
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#/about" ng-click="setActive('About')"><h3>MARGIE CHUBIN</h3></a>
+          <a class="navbar-brand" href="#/about" ng-click="setActive('About')">
+            <h4 class="nav-name">MARGIE CHUBIN</h4>
+          </a>
         </div>
         <div class="collapse navbar-collapse col-md-9" id="navbarCollapse" style="float:right">
-            <ul class="nav navbar-nav">
-                <li ng-repeat="link in links" id="{{link.name}}">
-                  <a ng-href="{{link.route}}" ng-click="setActive(link.name)">{{link.name}}</a>
-                </li>
-            </ul>
+          <ul class="nav navbar-nav">
+            <li ng-repeat="link in links" id="{{link.name}}">
+              <a ng-href="{{link.route}}" ng-click="setActive(link.name)">{{link.name}}</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
-    
-    <!--Views change based on the route here-->
-    <div ng-view></div>
+  </header>
 
-  </body>
+  <!--Views change based on the route here-->
+  <div ng-view></div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <footer role="contentinfo" class="footer page-footer">
+    <div class="container">
+      <div class="social">
+        <ul>
+          <li><a href="mailto:chubin2@illinois.edu" target="_blank">
+  					<i class="fa fa-lg fa-envelope"></i>
+  				</a></li>
+          <li><a href="https://www.linkedin.com/in/margiechubin" target="_blank">
+  					<i class="fa fa-lg fa-linkedin-square"></i>
+  				</a></li>
+          <li><a href="http://www.github.com/margiechubin" target="_blank">
+  					<i class="fa fa-lg fa-github"></i>
+  				</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </html>
